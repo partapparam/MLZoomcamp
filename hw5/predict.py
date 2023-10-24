@@ -23,7 +23,7 @@ def predict():
     y_pred = model.predict_proba(X)[0, 1]
     score = y_pred >= 0.5
 
-    result = {"churn_probability": float(y_pred), "score": bool(score)}
+    result = {"credit_prop": float(y_pred), "score": bool(score)}
 
     return jsonify(result)
 

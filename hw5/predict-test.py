@@ -8,6 +8,7 @@ url = f"http://{host}/predict"
 
 customer_id = "xyz-123"
 client = {"job": "retired", "duration": 445, "poutcome": "success"}
+client_two = {"job": "unknown", "duration": 270, "poutcome": "failure"}
 
 
 response = requests.post(url, json=client).json()
